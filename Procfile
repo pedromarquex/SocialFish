@@ -1,1 +1,1 @@
-web: python SocialFish.py
+web: gunicorn wsgi:main
